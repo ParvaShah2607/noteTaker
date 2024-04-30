@@ -47,6 +47,7 @@ public class SaveNotes extends HttpServlet {
 			
 			Note note = new Note(title,content, new Date());
 			//hibernate : save()
+			System.out.println("hello");
 			System.out.println("This is id "+ note.getId());
 			Session s = FactoryProvider.getFactory().openSession();	
 			
